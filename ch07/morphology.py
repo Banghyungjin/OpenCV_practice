@@ -3,7 +3,7 @@ import numpy as np
 import cv2
 
 
-src = cv2.imread('circuit.bmp', cv2.IMREAD_GRAYSCALE)
+src = cv2.imread('ch07/circuit.bmp', cv2.IMREAD_GRAYSCALE)
 
 if src is None:
     print('Image load failed!')

@@ -4,7 +4,7 @@ import cv2
 
 
 # 입력 영상 불러오기
-src = cv2.imread('rice.png', cv2.IMREAD_GRAYSCALE)
+src = cv2.imread('ch07/rice.png', cv2.IMREAD_GRAYSCALE)
 
 if src is None:
     print('Image load failed!')

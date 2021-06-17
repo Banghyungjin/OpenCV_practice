@@ -11,7 +11,7 @@ def setLabel(img, pts, label):
 
 
 def main():
-    img = cv2.imread('polygon.bmp', cv2.IMREAD_COLOR)
+    img = cv2.imread('ch07/polygon.bmp', cv2.IMREAD_COLOR)
 
     if img is None:
         print('Image load failed!')

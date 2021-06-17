@@ -3,7 +3,7 @@ import numpy as np
 import cv2
 
 
-src = cv2.imread('tekapo.bmp')
+src = cv2.imread('ch05/tekapo.bmp')
 
 if src is None:
     print('Image load failed!')
