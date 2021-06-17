@@ -3,7 +3,7 @@ import numpy as np
 import cv2
 
 
-src = cv2.imread('keyboard.bmp', cv2.IMREAD_GRAYSCALE)
+src = cv2.imread('ch07/keyboard.bmp', cv2.IMREAD_GRAYSCALE)
 
 if src is None:
     print('Image load failed!')
@@ -18,8 +18,8 @@ dst = cv2.cvtColor(src, cv2.COLOR_GRAY2BGR)
 for i in range(1, cnt):
     (x, y, w, h, area) = stats[i]
 
-    if area < 20:
-        continue
+    # if area < 20:
+    #     continue
 
     cv2.rectangle(dst, (x, y, w, h), (0, 255, 255))
 
