@@ -3,7 +3,7 @@ import numpy as np
 import cv2
 
 
-img_names = ['img1.jpg', 'img2.jpg', 'img3.jpg']
+img_names = ['ch09/img1.jpg', 'ch09/img2.jpg', 'ch09/img3.jpg']
 
 imgs = []
 for name in img_names:

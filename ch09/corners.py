@@ -2,8 +2,7 @@ import sys
 import numpy as np
 import cv2
 
-
-src = cv2.imread('building.jpg', cv2.IMREAD_GRAYSCALE)
+src = cv2.imread('ch09/building.jpg', cv2.IMREAD_GRAYSCALE)
 
 if src is None:
     print('Image load failed!')

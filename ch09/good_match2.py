@@ -4,8 +4,8 @@ import cv2
 
 
 # 영상 불러오기
-src1 = cv2.imread('graf1.png', cv2.IMREAD_GRAYSCALE)
-src2 = cv2.imread('graf3.png', cv2.IMREAD_GRAYSCALE)
+src1 = cv2.imread('ch09/graf1.png', cv2.IMREAD_GRAYSCALE)
+src2 = cv2.imread('ch09/graf3.png', cv2.IMREAD_GRAYSCALE)
 
 if src1 is None or src2 is None:
     print('Image load failed!')
