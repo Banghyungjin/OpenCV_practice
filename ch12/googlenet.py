@@ -4,7 +4,8 @@ import cv2
 
 # 입력 영상 불러오기
 
-filename = 'space_shuttle.jpg'
+filename = 'ch12/cat.jpg'
+# filename = sys.argv[0]
 
 if len(sys.argv) > 1:
     filename = sys.argv[1]
@@ -18,8 +19,8 @@ if img is None:
 # 네트워크 불러오기
 
 # Caffe
-model = 'googlenet/bvlc_googlenet.caffemodel'
-config = 'googlenet/deploy.prototxt'
+model = 'ch12/googlenet/bvlc_googlenet.caffemodel'
+config = 'ch12/googlenet/deploy.prototxt'
 
 net = cv2.dnn.readNet(model, config)
 
@@ -30,7 +31,7 @@ if net.empty():
 # 클래스 이름 불러오기
 
 classNames = None
-with open('googlenet/classification_classes_ILSVRC2012.txt', 'rt') as f:
+with open('ch12/googlenet/classification_classes_ILSVRC2012.txt', 'rt') as f:
     classNames = f.read().rstrip('\n').split('\n')
 
 # 추론

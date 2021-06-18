@@ -2,8 +2,8 @@ import sys
 import numpy as np
 import cv2
 
-model = 'opencv_face_detector/opencv_face_detector_uint8.pb'
-config = 'opencv_face_detector/opencv_face_detector.pbtxt'
+model = 'ch13/opencv_face_detector/opencv_face_detector_uint8.pb'
+config = 'ch13/opencv_face_detector/opencv_face_detector.pbtxt'
 
 cap = cv2.VideoCapture(0)
 
